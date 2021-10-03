@@ -65,6 +65,7 @@ section {
   display: flex;
   justify-content: center; /* display+justify+align= выровняли текст по центру*/
   align-items: center;
+  overflow: hidden;
 }
 section::before {
   /*Делаем размытую гранизу между секцией */
@@ -96,6 +97,7 @@ section img#mountains_front {
 }
 #text {
   position: absolute;
+  right: -350px;
   color: #fff;
   white-space: nowrap;
   font-size: 7.5vw;
