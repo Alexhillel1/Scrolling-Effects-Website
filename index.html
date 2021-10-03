@@ -40,12 +40,93 @@
         alt="mountains_behind"
       />
       <h2 id="text">Moon Light</h2>
-      <a id="btn" href="">Explore</a>
+      <a id="btn" href="#sec">Explore</a>
       <img
         src="./img/mountains_front.png"
         id="mountains_front"
         alt="mountains_front.png"
       />
     </section>
+    <div class="sec" id="sec">
+      <h2>Parallax Scrolling Effects</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rerum in
+        vitae adipisci beatae atque quae, quam incidunt dolore delectus. Quasi
+        optio dolorum quas explicabo temporibus facere fugit odit numquam! Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Mollitia corporis
+        aperiam dicta ratione. Neque modi error, totam, praesentium laboriosam
+        facilis fuga, debitis omnis officia ullam nostrum dolorum! Autem, eaque
+        quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+        pariatur officia labore iste obcaecati autem aliquid praesentium porro,
+        veniam repudiandae, enim quibusdam fugiat, amet earum magni laboriosam
+        similique est saepe. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Nihil rerum in vitae adipisci beatae atque quae, quam incidunt
+        dolore delectus. Quasi optio dolorum quas explicabo temporibus facere
+        fugit odit numquam! Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. <br />
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rerum in
+        vitae adipisci beatae atque quae, quam incidunt dolore delectus. Quasi
+        optio dolorum quas explicabo temporibus facere fugit odit numquam! Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Nihil rerum in vitae adipisci
+        beatae atque quae, quam incidunt dolore delectus. Quasi optio dolorum
+        quas explicabo temporibus facere fugit odit numquam! Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Nihil rerum in vitae adipisci beatae atque
+        quae, quam incidunt dolore delectus. Quasi optio dolorum quas explicabo
+        temporibus facere fugit odit numquam! Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. <br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rerum in
+        vitae adipisci beatae atque quae, quam incidunt dolore delectus. Quasi
+        optio dolorum quas explicabo temporibus facere fugit odit numquam! Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Nihil rerum in vitae adipisci
+        beatae atque quae, quam incidunt dolore delectus. Quasi optio dolorum
+        quas explicabo temporibus facere fugit odit numquam! Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Nihil rerum in vitae adipisci beatae atque
+        quae, quam incidunt dolore delectus. Quasi optio dolorum quas explicabo
+        temporibus facere fugit odit numquam! Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. <br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rerum in
+        vitae adipisci beatae atque quae, quam incidunt dolore delectus. Quasi
+        optio dolorum quas explicabo temporibus facere fugit odit numquam! Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Nihil rerum in vitae adipisci
+        beatae atque quae, quam incidunt dolore delectus. Quasi optio dolorum
+        quas explicabo temporibus facere fugit odit numquam! Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Nihil rerum in vitae adipisci beatae atque
+        quae, quam incidunt dolore delectus. Quasi optio dolorum quas explicabo
+        temporibus facere fugit odit numquam! Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. <br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rerum in
+        vitae adipisci beatae atque quae, quam incidunt dolore delectus. Quasi
+        optio dolorum quas explicabo temporibus facere fugit odit numquam! Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Nihil rerum in vitae adipisci
+        beatae atque quae, quam incidunt dolore delectus. Quasi optio dolorum
+        quas explicabo temporibus facere fugit odit numquam! Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Nihil rerum in vitae adipisci beatae atque
+        quae, quam incidunt dolore delectus. Quasi optio dolorum quas explicabo
+        temporibus facere fugit odit numquam! Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit.
+      </p>
+    </div>
+    <script>
+      let stars = document.getElementById("stars");
+      let moon = document.getElementById("moon");
+      let mountains_behind = document.getElementById("mountains_behind");
+      let text = document.getElementById("text");
+      let mountains_front = document.getElementById("mountains_front");
+      let btn = document.getElementById("btn");
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + "px";
+        moon.style.top = value * 1.05 + "px";
+      });
+    </script>
   </body>
 </html>
